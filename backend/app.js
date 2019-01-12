@@ -1,19 +1,36 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
 
-var allowCrossDomain = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', "*");
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PATCH, DELETE, OPTIONS"
+  );
   next();
-};
-  app.use(allowCrossDomain);
+});
   //some other code
 
 app.get('/', (req, res) => res.send('Hello World!!!'))
 
-app.use("/api/posts", (req,res, next) => {
+app.post("/api/posts", (req, res, next) => {
+  const post = req.body;
+  console.log(post);
+  res.status(201).json({
+    message: 'Post added baby'
+  });
+});
+
+app.get("/api/posts", (req,res, next) => {
   const posts = [
     {
     statementDate: "07/08/1990",
@@ -32,7 +49,7 @@ app.use("/api/posts", (req,res, next) => {
      counselFees: "I dont have a lawyer",
      college: "1000000",
      other: "not sure",
-     yourName: "Barry Manilo",
+     yourName: "Jeff Bezoz",
      streetAddress: "7619 Baby Bottom",
      city: "Jersey City",
      state: "New Jersey",

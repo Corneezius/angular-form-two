@@ -9,3 +9,8 @@ mat-toolbar {
 .gold {
   color:gold;
 }
+
+mat-toolbar {
+  font-family:roboto;
+  font-weight:600;
+}

@@ -3,7 +3,7 @@
 <mat-accordion class="example-headers-align">
   <form (submit)="onAddPost(postForm)" #postForm="ngForm">
   <!-- Part A -->
-  <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+  <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
         Part A - Case Information:
@@ -435,11 +435,11 @@
         </section>
 
         <mat-action-row>
-          <button mat-button color="primary" (click)="nextStep()">Next</button>
+          <!-- <button mat-button color="primary" (click)="nextStep()">Next</button> -->
         </mat-action-row>
       </mat-expansion-panel>
       <!-- Part B -->
-      <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
             Part B - Miscellaneous:
