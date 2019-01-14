@@ -9,159 +9,7 @@
         Part A - Case Information:
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <section class="row">
-      <section class="column">
 
-          <!-- <mat-error *ngIf="name.invalid">Please enter a name.</mat-error> -->
-        <mat-form-field>
-              <input matInput
-                     type="date"
-                     min="1"
-                     placeholder="Date of Statement"
-                     required
-                     ngModel
-                     name="statementDate">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     type="date"
-                     min="1"
-                     placeholder="Date of Divorce"
-                     required
-                     ngModel
-                     name="divorceDate">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     type="date"
-                     min="1"
-                     placeholder="Date of Prior Statement"
-                     required
-                     ngModel
-                     name="priorStatement">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     type="date"
-                     min="1"
-                     placeholder="birthdate"
-                     required
-                     ngModel
-                     name="birthDate">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     type="date"
-                     min="1"
-                     placeholder="Birthdate of Other Party"
-                     required
-                     ngModel
-                     name="otherBirthDate">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     type="date"
-                     min="1"
-                     placeholder="Date of Marriage"
-                     required
-                     ngModel
-                     name="marriageDate">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     type="date"
-                     min="1"
-                     placeholder="Date of Separation"
-                     required
-                     ngModel
-                     name="separationDate">
-            </mat-form-field>
-            <br>
-            Does an agreement exist between parties relative to any issue? If YES,  UPLOAD a copy (if written) or a summary (if oral) <a href="">here</a>.
-            <mat-checkbox
-                    class="example-margin">
-                      Yes
-            </mat-checkbox>
-            <mat-checkbox class="example-margin">
-                      No
-              </mat-checkbox>
-          </section>
-          <h5> Issues in Dispute:</h5>
-          <section class="column">
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="Cause of Action"
-                     required
-                     ngModel
-                     name="causeAction">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="Custody"
-                     required
-                     ngModel
-                     name="custody">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="Parenting Time"
-                     required
-                     ngModel
-                     name="parentingTime">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="Alimony"
-                     required
-                     ngModel
-                     name="alimony">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="childSupport"
-                     required
-                     ngModel
-                     name="childSupport">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="Equitable Distribution"
-                     required
-                     ngModel
-                     name="equitableDistribution">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="Counsel Fees"
-                     required
-                     ngModel
-                     name="counselFees">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="Anticipated College Expenses"
-                     required
-                     ngModel
-                     name="college">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput
-                     min="1"
-                     placeholder="Other"
-                     required
-                     ngModel
-                     name="other">
-            </mat-form-field>
-          </section>
-        </section>
         <h5> 1. Name and Addresses of Parties:</h5>
         <section class="row">
           <section class="column">
@@ -433,10 +281,160 @@
             </mat-form-field>
           </section>
         </section>
+        <section class="row">
+          <section class="column">
+              <h5> 3. Claim Description:</h5>
 
-        <mat-action-row>
-          <!-- <button mat-button color="primary" (click)="nextStep()">Next</button> -->
-        </mat-action-row>
+              <!-- <mat-error *ngIf="name.invalid">Please enter a name.</mat-error> -->
+            <mat-form-field>
+                  <input matInput
+                         type="date"
+                         min="1"
+                         placeholder="Date of Statement"
+                         required
+                         ngModel
+                         name="statementDate">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         type="date"
+                         min="1"
+                         placeholder="Date of Divorce"
+                         required
+                         ngModel
+                         name="divorceDate">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         type="date"
+                         min="1"
+                         placeholder="Date of Prior Statement"
+                         required
+                         ngModel
+                         name="priorStatement">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         type="date"
+                         min="1"
+                         placeholder="birthdate"
+                         required
+                         ngModel
+                         name="birthDate">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         type="date"
+                         min="1"
+                         placeholder="Birthdate of Other Party"
+                         required
+                         ngModel
+                         name="otherBirthDate">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         type="date"
+                         min="1"
+                         placeholder="Date of Marriage"
+                         required
+                         ngModel
+                         name="marriageDate">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         type="date"
+                         min="1"
+                         placeholder="Date of Separation"
+                         required
+                         ngModel
+                         name="separationDate">
+                </mat-form-field>
+                <br>
+                Does an agreement exist between parties relative to any issue? If YES,  UPLOAD a copy (if written) or a summary (if oral) <a href="">here</a>.
+                <mat-checkbox
+                        class="example-margin">
+                          Yes
+                </mat-checkbox>
+                <mat-checkbox class="example-margin">
+                          No
+                  </mat-checkbox>
+              </section>
+              <h5> Issues in Dispute:</h5>
+              <section class="column">
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="Cause of Action"
+                         required
+                         ngModel
+                         name="causeAction">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="Custody"
+                         required
+                         ngModel
+                         name="custody">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="Parenting Time"
+                         required
+                         ngModel
+                         name="parentingTime">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="Alimony"
+                         required
+                         ngModel
+                         name="alimony">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="childSupport"
+                         required
+                         ngModel
+                         name="childSupport">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="Equitable Distribution"
+                         required
+                         ngModel
+                         name="equitableDistribution">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="Counsel Fees"
+                         required
+                         ngModel
+                         name="counselFees">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="Anticipated College Expenses"
+                         required
+                         ngModel
+                         name="college">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput
+                         min="1"
+                         placeholder="Other"
+                         required
+                         ngModel
+                         name="other">
+                </mat-form-field>
+              </section>
+            </section>
       </mat-expansion-panel>
       <!-- Part B -->
       <mat-expansion-panel>
